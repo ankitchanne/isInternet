@@ -1,7 +1,4 @@
-import urllib2
-import os
-import time
-import webbrowser
+import urllib2, os, time, webbrowser
 
 def checkConn():
 	try:
@@ -12,5 +9,4 @@ def checkConn():
 while(checkConn() is False):
 	checkConn()
 
-print 'Connected'
 webbrowser.get().open('file://'+os.path.realpath('play_ping.html'))
